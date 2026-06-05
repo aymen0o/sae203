@@ -1,0 +1,54 @@
+.liste-lieux li {
+    display: flex;
+    column-gap: 2rem;
+    margin-bottom: 3.25rem;
+    cursor: pointer;
+}
+
+.liste-lieux li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.liste-lieux li:last-of-type {
+    margin-bottom: 0;
+}
+
+.liste-lieux .textes {
+    flex: 1;
+}
+
+.liste-lieux .titre {
+    font-size: 2.05rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.liste-lieux li:hover .titre {
+    color: #1453ff; 
+}
+
+.image {
+    width: 522px;        
+    height: 425px;
+    margin: 0;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 8px;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.liste-lieux li:hover .image {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.liste-lieux li:hover .image img {
+    transform: scale(1.05);
+}
