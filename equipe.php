@@ -26,9 +26,10 @@ $resultat_equipe = mysqli_query($mysqli_link, $requete_equipe);
     <link rel="stylesheet" href="./ressources/css/a-propos.css">
 
     <style>
-    /* On cible les éléments qui ont la classe "vert" et on tourne la roue des couleurs ! */
+    /* changement de couleur de la bulle (bricolé) */
     .vert {
-        filter: hue-rotate(120deg) saturate(1.2);
+        /* Un violet pastel doux et lumineux */
+        filter: hue-rotate(100deg) saturate(0.6) brightness(1.15);
     }
 </style>
 </head>
