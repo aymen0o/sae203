@@ -36,6 +36,7 @@ $liste_entrees_menu = [
                 <?php
                     foreach ($liste_entrees_menu as $key => $entree_menu) {
                         $liste_classes = 'text-white';
+                        // La ligne ci-dessous pousse les derniers éléments vers la droite
                         if ($key === array_key_last($liste_entrees_menu)) {
                             $liste_classes .= ' ml-auto';
                         }
@@ -52,6 +53,10 @@ $liste_entrees_menu = [
                         ";
                     }
                 ?>
+                
+                <a href="./administration/logout.php" class="text-red-400 font-bold hover:bg-gray-700 hover:text-red-300 rounded-md px-3 py-2 transition duration-300">
+                    Déconnexion
+                </a>
             </nav>
         </div>
     </div>

@@ -1,4 +1,5 @@
 <?php
+require_once('../../ressources/includes/protection.php');
 require_once('../../ressources/includes/connexion-bdd.php');
 
 $requete_brute = '

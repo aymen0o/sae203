@@ -1,0 +1,8 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['admin_connecte']) || $_SESSION['admin_connecte'] !== true) {
+    header("Location: /administration/login.php");
+    exit();
+}
+?>
